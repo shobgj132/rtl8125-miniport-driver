@@ -1,0 +1,221 @@
+; RTL8125 integrated miniport driver package
+
+[Version]
+Signature   = "$Windows NT$"
+Class       = Net
+ClassGUID   = {4d36e972-e325-11ce-bfc1-08002be10318}
+Provider    = %ProviderName%
+DriverVer   = 04/07/2026,3.1.0.0
+CatalogFile = rtl8125miniport.cat
+PnpLockDown = 1
+
+[Manufacturer]
+%ManufacturerName% = RTL8125Miniport,NTamd64.10.0
+
+[RTL8125Miniport.NTamd64.10.0]
+; Coverage derived from local vendor package (C:\Windows\INF\rt640x64.inf)
+%RTL8125Miniport.DeviceDesc% = RTL8125Miniport.ndi.NT, PCI\VEN_10EC&DEV_8125&REV_00
+%RTL8125Miniport.DeviceDesc% = RTL8125Miniport.ndi.NT, PCI\VEN_10EC&DEV_8125&REV_01
+%RTL8125Miniport.DeviceDesc% = RTL8125Miniport.ndi.NT, PCI\VEN_10EC&DEV_8125&SUBSYS_18D20B05&REV_01
+%RTL8125Miniport.DeviceDesc% = RTL8125Miniport.ndi.NT, PCI\VEN_10EC&DEV_8125&REV_02
+%RTL8125Miniport.DeviceDesc% = RTL8125Miniport.ndi.NT, PCI\VEN_10EC&DEV_8125&REV_03
+%RTL8125Miniport.DeviceDesc% = RTL8125Miniport.ndi.NT, PCI\VEN_10EC&DEV_8125&SUBSYS_812510EC&REV_03
+%RTL8125Miniport.DeviceDesc% = RTL8125Miniport.ndi.NT, PCI\VEN_10EC&DEV_8125&REV_04
+%RTL8125Miniport.DeviceDesc% = RTL8125Miniport.ndi.NT, PCI\VEN_10EC&DEV_8125&SUBSYS_812510EC&REV_04
+%RTL8125Miniport.DeviceDesc% = RTL8125Miniport.ndi.NT, PCI\VEN_10EC&DEV_8125&REV_05
+%RTL8125Miniport.DeviceDesc% = RTL8125Miniport.ndi.NT, PCI\VEN_10EC&DEV_8125&SUBSYS_012310EC&REV_05
+%RTL8125Miniport.DeviceDesc% = RTL8125Miniport.ndi.NT, PCI\VEN_10EC&DEV_8125&SUBSYS_812510EC&REV_05
+%RTL8125Miniport.DeviceDesc% = RTL8125Miniport.ndi.NT, PCI\VEN_10EC&DEV_8125&REV_06
+%RTL8125Miniport.DeviceDesc% = RTL8125Miniport.ndi.NT, PCI\VEN_10EC&DEV_8125&SUBSYS_812510EC&REV_06
+%RTL8125Miniport.DeviceDesc% = RTL8125Miniport.ndi.NT, PCI\VEN_10EC&DEV_8125&REV_07
+%RTL8125Miniport.DeviceDesc% = RTL8125Miniport.ndi.NT, PCI\VEN_10EC&DEV_8125&SUBSYS_812510EC&REV_07
+%RTL8125Miniport.DeviceDesc% = RTL8125Miniport.ndi.NT, PCI\VEN_10EC&DEV_8125&REV_08
+%RTL8125Miniport.DeviceDesc% = RTL8125Miniport.ndi.NT, PCI\VEN_10EC&DEV_8125&SUBSYS_812510EC&REV_08
+%RTL8125Miniport.DeviceDesc% = RTL8125Miniport.ndi.NT, PCI\VEN_10EC&DEV_8125&REV_09
+%RTL8125Miniport.DeviceDesc% = RTL8125Miniport.ndi.NT, PCI\VEN_10EC&DEV_8125&SUBSYS_812510EC&REV_09
+%RTL8125Miniport.DeviceDesc% = RTL8125Miniport.ndi.NT, PCI\VEN_10EC&DEV_8125&REV_0A
+%RTL8125Miniport.DeviceDesc% = RTL8125Miniport.ndi.NT, PCI\VEN_10EC&DEV_8125&SUBSYS_812510EC&REV_0A
+%RTL8125Miniport.DeviceDesc% = RTL8125Miniport.ndi.NT, PCI\VEN_10EC&DEV_8125&REV_0B
+%RTL8125Miniport.DeviceDesc% = RTL8125Miniport.ndi.NT, PCI\VEN_10EC&DEV_8125&SUBSYS_812510EC&REV_0B
+%RTL8125Miniport.DeviceDesc% = RTL8125Miniport.ndi.NT, PCI\VEN_10EC&DEV_8125&REV_0C
+%RTL8125Miniport.DeviceDesc% = RTL8125Miniport.ndi.NT, PCI\VEN_10EC&DEV_8125&SUBSYS_812510EC&REV_0C
+%RTL8125Miniport.DeviceDesc% = RTL8125Miniport.ndi.NT, PCI\VEN_10EC&DEV_8125&REV_0D
+%RTL8125Miniport.DeviceDesc% = RTL8125Miniport.ndi.NT, PCI\VEN_10EC&DEV_8125&SUBSYS_812510EC&REV_0D
+%RTL8125Miniport.DeviceDesc% = RTL8125Miniport.ndi.NT, PCI\VEN_10EC&DEV_8125&REV_0E
+%RTL8125Miniport.DeviceDesc% = RTL8125Miniport.ndi.NT, PCI\VEN_10EC&DEV_8125&SUBSYS_812510EC&REV_0E
+%RTL8125Miniport.DeviceDesc% = RTL8125Miniport.ndi.NT, PCI\VEN_10EC&DEV_8125&REV_0F
+%RTL8125Miniport.DeviceDesc% = RTL8125Miniport.ndi.NT, PCI\VEN_10EC&DEV_8125&SUBSYS_812510EC&REV_0F
+%RTL8125Miniport.DeviceDesc% = RTL8125Miniport.ndi.NT, PCI\VEN_10EC&DEV_8125&REV_10
+%RTL8125Miniport.DeviceDesc% = RTL8125Miniport.ndi.NT, PCI\VEN_10EC&DEV_8125&SUBSYS_812510EC&REV_10
+%RTL8125Miniport.DeviceDesc% = RTL8125Miniport.ndi.NT, PCI\VEN_10EC&DEV_8125&REV_11
+%RTL8125Miniport.DeviceDesc% = RTL8125Miniport.ndi.NT, PCI\VEN_10EC&DEV_8125&SUBSYS_812510EC&REV_11
+%RTL8125Miniport.DeviceDesc% = RTL8125Miniport.ndi.NT, PCI\VEN_10EC&DEV_8125&REV_12
+%RTL8125Miniport.DeviceDesc% = RTL8125Miniport.ndi.NT, PCI\VEN_10EC&DEV_8125&SUBSYS_812510EC&REV_12
+%RTL8125Miniport.DeviceDesc% = RTL8125Miniport.ndi.NT, PCI\VEN_10EC&DEV_8125&REV_13
+%RTL8125Miniport.DeviceDesc% = RTL8125Miniport.ndi.NT, PCI\VEN_10EC&DEV_8125&SUBSYS_812510EC&REV_13
+%RTL8125Miniport.DeviceDesc% = RTL8125Miniport.ndi.NT, PCI\VEN_10EC&DEV_8125&REV_14
+%RTL8125Miniport.DeviceDesc% = RTL8125Miniport.ndi.NT, PCI\VEN_10EC&DEV_8125&SUBSYS_812510EC&REV_14
+%RTL8125Miniport.DeviceDesc% = RTL8125Miniport.ndi.NT, PCI\VEN_10EC&DEV_8125&REV_15
+%RTL8125Miniport.DeviceDesc% = RTL8125Miniport.ndi.NT, PCI\VEN_10EC&DEV_8125&SUBSYS_812510EC&REV_15
+%RTL8125Miniport.DeviceDesc% = RTL8125Miniport.ndi.NT, PCI\VEN_10EC&DEV_8125&REV_16
+%RTL8125Miniport.DeviceDesc% = RTL8125Miniport.ndi.NT, PCI\VEN_10EC&DEV_8125&SUBSYS_812510EC&REV_16
+%RTL8125Miniport.DeviceDesc% = RTL8125Miniport.ndi.NT, PCI\VEN_10EC&DEV_8125&REV_17
+%RTL8125Miniport.DeviceDesc% = RTL8125Miniport.ndi.NT, PCI\VEN_10EC&DEV_8125&SUBSYS_812510EC&REV_17
+%RTL8125Miniport.DeviceDesc% = RTL8125Miniport.ndi.NT, PCI\VEN_10EC&DEV_8125&REV_18
+%RTL8125Miniport.DeviceDesc% = RTL8125Miniport.ndi.NT, PCI\VEN_10EC&DEV_8125&SUBSYS_812510EC&REV_18
+%RTL8125Miniport.DeviceDesc% = RTL8125Miniport.ndi.NT, PCI\VEN_10EC&DEV_8125&REV_19
+%RTL8125Miniport.DeviceDesc% = RTL8125Miniport.ndi.NT, PCI\VEN_10EC&DEV_8125&SUBSYS_812510EC&REV_19
+%RTL8125Miniport.DeviceDesc% = RTL8125Miniport.ndi.NT, PCI\VEN_10EC&DEV_8125&REV_1A
+%RTL8125Miniport.DeviceDesc% = RTL8125Miniport.ndi.NT, PCI\VEN_10EC&DEV_8125&SUBSYS_812510EC&REV_1A
+%RTL8125Miniport.DeviceDesc% = RTL8125Miniport.ndi.NT, PCI\VEN_10EC&DEV_8125&REV_1B
+%RTL8125Miniport.DeviceDesc% = RTL8125Miniport.ndi.NT, PCI\VEN_10EC&DEV_8125&SUBSYS_812510EC&REV_1B
+%RTL8125Miniport.DeviceDesc% = RTL8125Miniport.ndi.NT, PCI\VEN_10EC&DEV_8125&REV_1C
+%RTL8125Miniport.DeviceDesc% = RTL8125Miniport.ndi.NT, PCI\VEN_10EC&DEV_8125&SUBSYS_812510EC&REV_1C
+%RTL8125Miniport.DeviceDesc% = RTL8125Miniport.ndi.NT, PCI\VEN_10EC&DEV_8125&REV_1D
+%RTL8125Miniport.DeviceDesc% = RTL8125Miniport.ndi.NT, PCI\VEN_10EC&DEV_8125&SUBSYS_812510EC&REV_1D
+%RTL8125Miniport.DeviceDesc% = RTL8125Miniport.ndi.NT, PCI\VEN_10EC&DEV_8125&REV_1E
+%RTL8125Miniport.DeviceDesc% = RTL8125Miniport.ndi.NT, PCI\VEN_10EC&DEV_8125&SUBSYS_812510EC&REV_1E
+%RTL8125Miniport.DeviceDesc% = RTL8125Miniport.ndi.NT, PCI\VEN_10EC&DEV_8125&REV_1F
+%RTL8125Miniport.DeviceDesc% = RTL8125Miniport.ndi.NT, PCI\VEN_10EC&DEV_8125&SUBSYS_812510EC&REV_1F
+
+[ControlFlags]
+ExcludeFromSelect = *
+
+[RTL8125Miniport.ndi.NT]
+Characteristics    = 0x84
+BusType            = 5
+*IfType            = 0x6
+*MediaType         = 0x0
+*PhysicalMediaType = 14
+AddReg             = RTL8125Miniport.Reg
+AddReg             = RTL8125Miniport.Advanced.Reg
+CopyFiles          = RTL8125Miniport.CopyFiles
+
+[RTL8125Miniport.ndi.NT.Services]
+AddService = RTL8125MiniportV3, 2, RTL8125Miniport.Service, RTL8125Miniport.EventLog
+
+[RTL8125Miniport.Reg]
+HKR, Ndi, Service, 0, "RTL8125MiniportV3"
+HKR, Ndi\Interfaces, UpperRange, 0, "ndis5"
+HKR, Ndi\Interfaces, LowerRange, 0, "ethernet"
+
+[RTL8125Miniport.Advanced.Reg]
+HKR, Ndi\Params\*RSS, ParamDesc, 0, %RSSParamDesc%
+HKR, Ndi\Params\*RSS, default, 0, "0"
+HKR, Ndi\Params\*RSS, type, 0, "enum"
+HKR, Ndi\Params\*RSS\Enum, "0", 0, %Disabled%
+HKR, Ndi\Params\*RSS\Enum, "1", 0, %Enabled%
+
+HKR, Ndi\Params\*NumRssQueues, ParamDesc, 0, %NumRssQueuesParamDesc%
+HKR, Ndi\Params\*NumRssQueues, default, 0, "1"
+HKR, Ndi\Params\*NumRssQueues, type, 0, "int"
+HKR, Ndi\Params\*NumRssQueues, min, 0, "1"
+HKR, Ndi\Params\*NumRssQueues, max, 0, "4"
+HKR, Ndi\Params\*NumRssQueues, step, 0, "1"
+
+HKR, Ndi\Params\*JumboPacket, ParamDesc, 0, %JumboParamDesc%
+HKR, Ndi\Params\*JumboPacket, default, 0, "1500"
+HKR, Ndi\Params\*JumboPacket, type, 0, "int"
+HKR, Ndi\Params\*JumboPacket, min, 0, "1500"
+HKR, Ndi\Params\*JumboPacket, max, 0, "9000"
+HKR, Ndi\Params\*JumboPacket, step, 0, "1"
+
+HKR, Ndi\Params\*IPChecksumOffloadIPv4, ParamDesc, 0, %IPChecksumIPv4ParamDesc%
+HKR, Ndi\Params\*IPChecksumOffloadIPv4, Default, 0, "0"
+HKR, Ndi\Params\*IPChecksumOffloadIPv4, type, 0, "enum"
+HKR, Ndi\Params\*IPChecksumOffloadIPv4\enum, "3", 0, %TxRx%
+HKR, Ndi\Params\*IPChecksumOffloadIPv4\enum, "2", 0, %RxOnly%
+HKR, Ndi\Params\*IPChecksumOffloadIPv4\enum, "1", 0, %TxOnly%
+HKR, Ndi\Params\*IPChecksumOffloadIPv4\enum, "0", 0, %Disabled%
+
+HKR, Ndi\Params\*TCPChecksumOffloadIPv4, ParamDesc, 0, %TCPChecksumIPv4ParamDesc%
+HKR, Ndi\Params\*TCPChecksumOffloadIPv4, Default, 0, "0"
+HKR, Ndi\Params\*TCPChecksumOffloadIPv4, type, 0, "enum"
+HKR, Ndi\Params\*TCPChecksumOffloadIPv4\enum, "3", 0, %TxRx%
+HKR, Ndi\Params\*TCPChecksumOffloadIPv4\enum, "2", 0, %RxOnly%
+HKR, Ndi\Params\*TCPChecksumOffloadIPv4\enum, "1", 0, %TxOnly%
+HKR, Ndi\Params\*TCPChecksumOffloadIPv4\enum, "0", 0, %Disabled%
+
+HKR, Ndi\Params\*UDPChecksumOffloadIPv4, ParamDesc, 0, %UDPChecksumIPv4ParamDesc%
+HKR, Ndi\Params\*UDPChecksumOffloadIPv4, Default, 0, "0"
+HKR, Ndi\Params\*UDPChecksumOffloadIPv4, type, 0, "enum"
+HKR, Ndi\Params\*UDPChecksumOffloadIPv4\enum, "3", 0, %TxRx%
+HKR, Ndi\Params\*UDPChecksumOffloadIPv4\enum, "2", 0, %RxOnly%
+HKR, Ndi\Params\*UDPChecksumOffloadIPv4\enum, "1", 0, %TxOnly%
+HKR, Ndi\Params\*UDPChecksumOffloadIPv4\enum, "0", 0, %Disabled%
+
+HKR, Ndi\Params\*TCPChecksumOffloadIPv6, ParamDesc, 0, %TCPChecksumIPv6ParamDesc%
+HKR, Ndi\Params\*TCPChecksumOffloadIPv6, Default, 0, "0"
+HKR, Ndi\Params\*TCPChecksumOffloadIPv6, type, 0, "enum"
+HKR, Ndi\Params\*TCPChecksumOffloadIPv6\enum, "3", 0, %TxRx%
+HKR, Ndi\Params\*TCPChecksumOffloadIPv6\enum, "2", 0, %RxOnly%
+HKR, Ndi\Params\*TCPChecksumOffloadIPv6\enum, "1", 0, %TxOnly%
+HKR, Ndi\Params\*TCPChecksumOffloadIPv6\enum, "0", 0, %Disabled%
+
+HKR, Ndi\Params\*UDPChecksumOffloadIPv6, ParamDesc, 0, %UDPChecksumIPv6ParamDesc%
+HKR, Ndi\Params\*UDPChecksumOffloadIPv6, Default, 0, "0"
+HKR, Ndi\Params\*UDPChecksumOffloadIPv6, type, 0, "enum"
+HKR, Ndi\Params\*UDPChecksumOffloadIPv6\enum, "3", 0, %TxRx%
+HKR, Ndi\Params\*UDPChecksumOffloadIPv6\enum, "2", 0, %RxOnly%
+HKR, Ndi\Params\*UDPChecksumOffloadIPv6\enum, "1", 0, %TxOnly%
+HKR, Ndi\Params\*UDPChecksumOffloadIPv6\enum, "0", 0, %Disabled%
+
+HKR, Ndi\Params\*LsoV2IPv4, ParamDesc, 0, %LsoV2IPv4ParamDesc%
+HKR, Ndi\Params\*LsoV2IPv4, Default, 0, "0"
+HKR, Ndi\Params\*LsoV2IPv4, type, 0, "enum"
+HKR, Ndi\Params\*LsoV2IPv4\enum, "1", 0, %Enabled%
+HKR, Ndi\Params\*LsoV2IPv4\enum, "0", 0, %Disabled%
+
+HKR, Ndi\Params\*LsoV2IPv6, ParamDesc, 0, %LsoV2IPv6ParamDesc%
+HKR, Ndi\Params\*LsoV2IPv6, Default, 0, "0"
+HKR, Ndi\Params\*LsoV2IPv6, type, 0, "enum"
+HKR, Ndi\Params\*LsoV2IPv6\enum, "1", 0, %Enabled%
+HKR, Ndi\Params\*LsoV2IPv6\enum, "0", 0, %Disabled%
+
+[RTL8125Miniport.CopyFiles]
+rtl8125miniport.sys,,,2
+
+[RTL8125Miniport.Service]
+DisplayName   = %RTL8125Miniport.ServiceDesc%
+ServiceType   = 1
+StartType     = 3
+ErrorControl  = 1
+ServiceBinary = %13%\rtl8125miniport.sys
+
+[RTL8125Miniport.EventLog]
+AddReg = RTL8125Miniport.EventLog.Reg
+
+[RTL8125Miniport.EventLog.Reg]
+HKR, , EventMessageFile, 0x00020000, "%%SystemRoot%%\System32\netevent.dll"
+HKR, , TypesSupported,   0x00010001, 7
+
+[SourceDisksNames]
+1 = %DiskName%,,,""
+
+[SourceDisksFiles]
+rtl8125miniport.sys = 1,,
+
+[DestinationDirs]
+RTL8125Miniport.CopyFiles = 13
+
+[Strings]
+ProviderName                 = "Local Lab"
+ManufacturerName             = "Realtek"
+RTL8125Miniport.DeviceDesc   = "Realtek PCIe 2.5GbE Family Controller"
+RTL8125Miniport.ServiceDesc  = "RTL8125 Integrated Miniport Driver"
+DiskName                     = "RTL8125 Miniport Install Disk"
+RSSParamDesc                 = "Receive Side Scaling"
+NumRssQueuesParamDesc        = "Maximum Number of RSS Queues"
+JumboParamDesc               = "Jumbo Packet"
+IPChecksumIPv4ParamDesc      = "IPv4 Header Checksum Offload"
+TCPChecksumIPv4ParamDesc     = "TCP Checksum Offload (IPv4)"
+UDPChecksumIPv4ParamDesc     = "UDP Checksum Offload (IPv4)"
+TCPChecksumIPv6ParamDesc     = "TCP Checksum Offload (IPv6)"
+UDPChecksumIPv6ParamDesc     = "UDP Checksum Offload (IPv6)"
+LsoV2IPv4ParamDesc           = "Large Send Offload v2 (IPv4)"
+LsoV2IPv6ParamDesc           = "Large Send Offload v2 (IPv6)"
+Disabled                     = "Disabled"
+Enabled                      = "Enabled"
+TxOnly                       = "Tx Enabled"
+RxOnly                       = "Rx Enabled"
+TxRx                         = "Tx and Rx Enabled"
