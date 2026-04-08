@@ -4,6 +4,18 @@
 
 专为 **高吞吐、低延迟、DMA 网络传输** 场景设计。适配 **PCILeech** 生态，支持 **FPGA DMA 板卡**（Squirrel / Enigma X1 / CaptainDMA 75T / 35T 等）通过 **pmemtcp 协议** 经网络高速回传 DMA 读取数据，同时也可作为通用高性能 2.5GbE 网卡驱动独立使用。
 
+## 支持芯片
+
+| 芯片型号 | PCIe Device ID | 硬件修订版本 | PHY Firmware | 说明 |
+|----------|---------------|-------------|-------------|------|
+| **RTL8125A** | `10EC:8125` | Rev 00 - 02 | — | 初代 2.5GbE，MSI/MSI-X，多队列 |
+| **RTL8125B** | `10EC:8125` | Rev 03 - 05 | 内置 RAM Code | 主流版本，扩展 L1 Off，PHY 调优 |
+| **RTL8125BP** | `10EC:8125` | Rev 06 - 09 | 内置 RAM Code | B 系列改良版，新中断合并引擎（v6），新 RX 描述符格式 |
+| **RTL8125D** | `10EC:8125` | Rev 0A - 0D | 内置 RAM Code + PHY Patch | 新一代，需 PHY firmware patch 才能稳定工作 |
+| **RTL8125CP** | `10EC:8125` | Rev 0E+ | 内置 RAM Code | 紧凑型封装变体 |
+
+> INF 覆盖 Rev 00 ~ Rev 1F 全部 32 个硬件修订版本。驱动运行时自动识别芯片型号，加载对应的 PHY firmware 和硬件配置策略。
+
 ## 架构
 
 ```mermaid
