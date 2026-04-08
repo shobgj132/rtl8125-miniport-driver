@@ -16,30 +16,6 @@
 
 > INF 覆盖 Rev 00 ~ Rev 1F 全部 32 个硬件修订版本。驱动运行时自动识别芯片型号，加载对应的 PHY firmware 和硬件配置策略。
 
-## 架构
-
-```mermaid
-graph LR
-    A["🔧 FPGA DMA 板卡<br/>Squirrel / Enigma X1 / 75T"] -->|"PCIe DMA<br/>物理内存读写"| B["🖥️ 目标机"]
-    B -->|"TCP/IP<br/>pmemtcp 协议"| C["📡 RTL8125 网卡<br/>本驱动"]
-    C -->|"2.5GbE<br/>高速回传"| D["💻 分析机<br/>LeechCore / MemProcFS"]
-```
-
-```
-目标机内部数据流：
-
-  应用层    pmemtcp 服务端（WSK 内核套接字）
-              │
-              ▼
-  传输层    TCP/IP 协议栈（Windows 内核）
-              │  组装 NET_BUFFER_LIST（可能 1400+ 个 NB）
-              ▼
-  驱动层    RTL8125 Miniport Driver（本项目）
-              │  NBL 拆分 → SG DMA / 线性化 → 描述符环写入
-              ▼
-  硬件层    RTL8125B 网卡（PCIe Bus Master DMA → 2.5GbE PHY → 网线）
-```
-
 ## 为什么做这个
 
 FPGA DMA 方案（PCILeech / LeechCore）做物理内存读写时，数据需要通过网络回传到分析机。这条链路的瓶颈往往不在 FPGA 端，而在 **网卡驱动的发送性能**：
