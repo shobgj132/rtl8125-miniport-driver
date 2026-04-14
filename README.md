@@ -4,6 +4,16 @@
 
 专为 **高吞吐、低延迟、DMA 网络传输** 场景设计。适配 **PCILeech** 生态，支持 **FPGA DMA 板卡**（Squirrel / Enigma X1 / CaptainDMA 75T / 35T 等）通过 **pmemtcp 协议** 经网络高速回传 DMA 读取数据，同时也可作为通用高性能 2.5GbE 网卡驱动独立使用。
 
+---
+
+## 交流 / 商业合作 / 驱动定制
+
+**QQ 群：1092101318**
+
+承接 **Windows NDIS 驱动开发 / FPGA DMA / Network DMA / PCIe 硬件底层** 相关技术咨询与定制。欢迎进群交流或开 [Issue](../../issues)。
+
+---
+
 ## 支持芯片
 
 | 芯片型号 | PCIe Device ID | 硬件修订版本 | PHY Firmware | 说明 |
@@ -104,9 +114,3 @@ FPGA DMA 方案（PCILeech / LeechCore）做物理内存读写时，数据需要
 
 持续开发中。核心收发已稳定，性能优化进行中。
 
-## 联系
-
-如果你对这个驱动感兴趣，或者有 FPGA DMA / Network DMA / Windows 内核驱动的定制需求：
-
-<!-- 联系方式 -->
-QQ 群 1092101318
